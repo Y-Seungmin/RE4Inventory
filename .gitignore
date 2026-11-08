@@ -21,3 +21,6 @@ Content/FabricMat/
 Content/MaterialsLeather/
 Content/MetalMat/
 Content/HC_CannedFoodSampler/
+
+# 패키징 때 생기는 파일 열기 순서 로그
+Build/Windows/FileOpenOrder/
