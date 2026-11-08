@@ -23,7 +23,7 @@
 
 ## 실행 파일 받기
 
-Windows용 Shipping 빌드 (zip, 약 700MB): https://drive.google.com/file/d/1ashITq_dowit4LexCxlw23nPKuu1o-fe/view
+Windows용 Shipping 빌드 (zip, 약 530MB): https://drive.google.com/file/d/1ashITq_dowit4LexCxlw23nPKuu1o-fe/view
 압축을 풀고 `RE4Inventory.exe`를 실행합니다. 종료는 Alt+F4입니다. 사용한 에셋의 크레딧은 zip 안의 `CREDITS.txt`에 있습니다.
 
 ## 실행과 조작
