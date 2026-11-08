@@ -292,22 +292,32 @@ def latch():
 
 
 def handle():
+    """케이스 앞벽 손잡이. 벽면이 Z=0, 아치가 +Z(벽 바깥)로 나온다. UE에서 X축으로 눕혀 붙인다"""
     reset()
+    # 가죽 손잡이: 양 끝이 놋쇠 축(Z=1.1)을 감싸고, 위에서 봐도 U자로 읽히게 깊은 아치
     bpy.ops.curve.primitive_bezier_curve_add()
     curve = bpy.context.active_object
     pts = curve.data.splines[0].bezier_points
-    pts[0].co = (-7 * CM, 0, 0)
-    pts[0].handle_left = (-8 * CM, 0, 0)
-    pts[0].handle_right = (-6 * CM, 0, 3.5 * CM)
-    pts[1].co = (7 * CM, 0, 0)
-    pts[1].handle_left = (6 * CM, 0, 3.5 * CM)
-    pts[1].handle_right = (8 * CM, 0, 0)
-    curve.data.bevel_depth = 0.9 * CM
+    for p, x in zip(pts, (-5.6, 5.6)):
+        p.co = (x * CM, 0, 1.1 * CM)
+        p.handle_left_type = p.handle_right_type = "FREE"
+    pts[0].handle_left = (-5.6 * CM, 0, -1.0 * CM)
+    pts[0].handle_right = (-5.6 * CM, 0, 5.4 * CM)
+    pts[1].handle_left = (5.6 * CM, 0, 5.4 * CM)
+    pts[1].handle_right = (5.6 * CM, 0, -1.0 * CM)
+    curve.data.resolution_u = 24
+    curve.data.bevel_depth = 0.75 * CM
     curve.data.bevel_resolution = 4
+    curve.data.use_fill_caps = True
+    curve.scale = (1.0, 1.35, 1.0)  # 단면을 벽 방향(Y)으로 조금 넓혀 납작한 가죽 띠처럼
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
     bpy.ops.object.convert(target="MESH")
     assign(bpy.context.active_object, "LeatherDark")
-    box((2.2, 1.6, 1.6), (-7.2, 0, 0.4), "Brass", bev=0.3)
-    box((2.2, 1.6, 1.6), (7.2, 0, 0.4), "Brass", bev=0.3)
+    for x in (-6.0, 6.0):
+        box((3.2, 2.4, 0.5), (x, 0, 0.25), "Brass", bev=0.15)                  # 벽에 붙는 판
+        cyl(0.45, 2.6, (x, 0, 1.1), "BrassDark", rot=(0, 90, 0), verts=16)     # 가죽이 감싸는 축
+        for dx in (-1.25, 1.25):
+            box((0.4, 1.6, 1.5), (x + dx, 0, 0.95), "Brass", bev=0.1)          # 축을 받치는 귀
     finish("SM_Case_Handle", lay_flat=False)
 
 

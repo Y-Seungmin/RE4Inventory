@@ -325,8 +325,8 @@ void ACaseViewActor::LayoutCase()
 	const float FrontY = InnerY + T;
 	PlaceBox(Latches[0], FVector(InnerX * 0.2f, FrontY + 0.75f, WallHeight - 1.9f), FVector(5.0f, 1.5f, 3.8f));
 	PlaceBox(Latches[1], FVector(InnerX * 0.8f, FrontY + 0.75f, WallHeight - 1.9f), FVector(5.0f, 1.5f, 3.8f));
-	// 손잡이는 아치가 앞(+Y)으로 나오도록 X축으로 눕힌다
-	PlaceBox(Latches[2], FVector(InnerX * 0.5f, FrontY + 1.6f, WallMidZ), FVector(16.6f, 3.4f, 1.8f), FRotator(0.0f, 0.0f, -90.0f));
+	// 손잡이는 아치(로컬 +Z)가 앞(+Y)으로 나오도록 X축으로 +90도 눕힌다. Size는 메시 로컬 축 기준이라 SM_Case_Handle 치수(폭 15.2, 벽 방향 2.4, 아치 깊이 5.17) 그대로 준다
+	PlaceBox(Latches[2], FVector(InnerX * 0.5f, FrontY + 2.6f, WallMidZ), FVector(15.2f, 2.4f, 5.17f), FRotator(0.0f, 0.0f, 90.0f));
 
 	// 모서리 보호대: 바닥판 아래 네 모서리, 벽 위 네 모서리
 	const float CornerSize = 2.6f;
