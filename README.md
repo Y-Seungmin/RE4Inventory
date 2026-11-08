@@ -21,6 +21,11 @@
 | `Source/RE4Inventory/Tests/*.cpp` | Automation 테스트 18개 (월드에 케이스를 띄워 격자↔3D 위치 대조 포함) |
 | `ASSETS.md` | 에셋 출처와 이용 조건, 조사했지만 쓰지 않은 로컬 파일 |
 
+## 실행 파일 받기
+
+Windows용 Shipping 빌드 (zip, 약 700MB): https://drive.google.com/file/d/1ashITq_dowit4LexCxlw23nPKuu1o-fe/view
+압축을 풀고 `RE4Inventory.exe`를 실행합니다. 종료는 Alt+F4입니다. 사용한 에셋의 크레딧은 zip 안의 `CREDITS.txt`에 있습니다.
+
 ## 실행과 조작
 
 에디터에서 `L_AttacheCase`를 열고 플레이합니다. `StartingItems`가 비어 있으면 시연용 아이템 10종이 들어갑니다. Fab 에셋이 프로젝트에 있으면 그 모델을, 없으면 이 저장소의 독자 모델(`Content/Meshes/SM_Item_*`)을 씁니다.
