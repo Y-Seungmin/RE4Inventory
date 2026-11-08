@@ -1,0 +1,27 @@
+{
+ "ImportGroups": [
+  {
+   "GroupName": "CaseMeshes",
+   "Filenames": [
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Case_BevelBox.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Case_Corner.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Case_Handle.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Case_Hinge.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Case_Latch.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_AmmoShells.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_AmmoSmall.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_Grenade.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_Gunpowder.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_Handgun.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_HerbGreen.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_HerbRed.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_Knife.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_Shotgun.fbx",
+    "C:/UEProjects/RE4Inventory/ArtSource/Meshes/SM_Item_Spray.fbx"
+   ],
+   "DestinationPath": "/Game/Meshes",
+   "bReplaceExisting": true,
+   "bSkipReadOnly": false
+  }
+ ]
+}

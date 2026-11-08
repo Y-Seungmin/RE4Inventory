@@ -1,0 +1,11 @@
+{
+ "ImportGroups": [
+  {
+   "GroupName": "FabM1911",
+   "Filenames": [ "C:/RE4Inventory_LocalAssets/fab/M1911/out/SM_Fab_M1911.fbx" ],
+   "DestinationPath": "/Game/Fab/M1911",
+   "bReplaceExisting": true,
+   "bSkipReadOnly": false
+  }
+ ]
+}

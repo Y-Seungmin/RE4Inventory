@@ -1,0 +1,17 @@
+{
+ "ImportGroups": [
+  {
+   "GroupName": "FabProps",
+   "Filenames": [
+    "C:/RE4Inventory_LocalAssets/fab/out_props/SM_Fab_Shotgun.fbx",
+    "C:/RE4Inventory_LocalAssets/fab/out_props/SM_Fab_AmmoCrate.fbx",
+    "C:/RE4Inventory_LocalAssets/fab/out_props/SM_Fab_SprayCan.fbx",
+    "C:/RE4Inventory_LocalAssets/fab/out_props/SM_Fab_Tin.fbx",
+    "C:/RE4Inventory_LocalAssets/fab/out_props/SM_Fab_Shells.fbx"
+   ],
+   "DestinationPath": "/Game/Fab/Props",
+   "bReplaceExisting": true,
+   "bSkipReadOnly": false
+  }
+ ]
+}

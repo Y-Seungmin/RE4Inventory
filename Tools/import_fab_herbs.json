@@ -1,0 +1,14 @@
+{
+ "ImportGroups": [
+  {
+   "GroupName": "FabHerbs",
+   "Filenames": [
+    "C:/RE4Inventory_LocalAssets/fab/Peppermint/out/SM_Fab_HerbGreen.fbx",
+    "C:/RE4Inventory_LocalAssets/fab/Peppermint/out/SM_Fab_HerbRed.fbx"
+   ],
+   "DestinationPath": "/Game/Fab/Herbs",
+   "bReplaceExisting": true,
+   "bSkipReadOnly": false
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+# Unreal 생성 폴더
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+*.slnx
+*.suo
+*.VC.db
+*.opensdf
+*.sdf
+
+# 저작권 보호 에셋 등 로컬 전용 파일 (절대 커밋하지 않음)
+Content/LocalOnly/
+
+# Fab에서 받은 외부 에셋: 라이선스상 재배포 불가이거나 출처 표기 대상. 프로젝트에만 두고 커밋하지 않음 (출처는 ASSETS.md)
+Content/Fab/
+Content/FPS_Weapon_Bundle/
+Content/FabricMat/
+Content/MaterialsLeather/
+Content/MetalMat/
+Content/HC_CannedFoodSampler/
