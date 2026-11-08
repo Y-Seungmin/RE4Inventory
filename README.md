@@ -21,6 +21,10 @@
 | `Source/RE4Inventory/Tests/*.cpp` | Automation 테스트 18개 (월드에 케이스를 띄워 격자↔3D 위치 대조 포함) |
 | `ASSETS.md` | 에셋 출처와 이용 조건, 조사했지만 쓰지 않은 로컬 파일 |
 
+## 시연 영상
+
+https://youtu.be/kzAv28hZzgI (24초, 에디터 PIE 화면)
+
 ## 실행 파일 받기
 
 Windows용 Shipping 빌드 (zip, 약 530MB): https://drive.google.com/file/d/1ashITq_dowit4LexCxlw23nPKuu1o-fe/view
